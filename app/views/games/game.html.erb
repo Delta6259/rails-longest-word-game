@@ -1,0 +1,14 @@
+<h1> ******** Welcome to the longest word-game!******** </h1>
+<h2> Here is your grid: </h2>
+<%= @grid %>
+<form action="/score" method="get">
+  <input type="text" name="try" placeholder="Find your best word !">
+  <input type="submit">
+  <input type="hidden" id="date" name="start" value="<%=@start%>">
+  <input type="hidden" name="grid" value="<%=@grid.join%>">
+</form>
+
+
+
+
+
